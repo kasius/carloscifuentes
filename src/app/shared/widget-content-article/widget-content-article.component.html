@@ -1,0 +1,4 @@
+<section class="widget-content-article">
+  <app-widget-title-big [title]="titleBlog.title" [publish]="titleBlog.publish"></app-widget-title-big>
+  <app-widget-article *ngFor="let article of articles" [article]="article">{{article.name}}</app-widget-article>
+</section>

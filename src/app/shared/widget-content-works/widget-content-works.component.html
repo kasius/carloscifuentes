@@ -1,0 +1,7 @@
+<section class="widget-content-article">
+  <app-widget-title-big [title]="view.title"></app-widget-title-big>
+  <h1>{{view.subtitle}}</h1>
+  <div class="work-content">
+    <app-widget-work *ngFor="let work of view.works" [work]="work"></app-widget-work>
+  </div>
+</section>

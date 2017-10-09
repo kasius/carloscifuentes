@@ -1,0 +1,11 @@
+<section class="widget-content-article">
+  <app-widget-title-big [title]="work.title" [publish]="work.technologies"></app-widget-title-big>
+  <h1 class="text-title-second">{{work.subtitle}}</h1>
+  <div class="work-content">
+    <p>{{work.description}}</p>
+    <figure>
+      <img alt="Imagen User" class="img" [src]="work.url">
+      <figcaption>1.-{{work.title}}</figcaption>
+    </figure>
+  </div>
+</section>

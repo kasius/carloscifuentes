@@ -1,0 +1,52 @@
+<md-toolbar>
+  <span>Nuevo Articulo </span>
+  <span class="example-spacer"></span>
+  <button class="nav-link" routerLinkActive="active" [routerLink]="['/cms-blog/create']" md-mini-fab color="primary">
+    <md-icon class="md-24" aria-label="Example icon-button with a heart icon">add</md-icon>
+  </button>
+</md-toolbar>
+<div class="container-primary">
+  <md-form-field class="example-full-width">
+    <input mdInput placeholder="First name">
+  </md-form-field>
+  <md-form-field class="example-full-width">
+    <input mdInput placeholder="First name">
+  </md-form-field>
+  <h4>Simple sortable</h4>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          Favorite drinks
+        </div>
+        <div class="panel-body">
+          <ul ngui-sortable>
+            <li id="order">
+                ¿Por qué lo usamos? Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de
+                un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos
+                normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos
+                textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas
+                web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por
+                resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones
+                han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo
+                insertándole humor y cosas por el estilo).
+            </li>
+            <li id="me">Me</li>
+            <li id="right">Right</li>
+            <li id="the">The</li>
+            <li id="into">Into</li>
+            <li id="put">Put</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          My prefences:<br/>
+          <span *ngFor="let item of listOne; let i = index">{{i + 1}}) {{item}}<br/></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
