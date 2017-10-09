@@ -24,6 +24,7 @@ import { WidgetContentWorksComponent } from './widget-content-works/widget-conte
 import { WidgetCommentComponent } from './widget-comment/widget-comment.component';
 import { WidgetTitleSecondComponent } from './widget-title-second/widget-title-second.component';
 import { WidgetWorkComponent } from './widget-work/widget-work.component';
+import { WidgetGithubComponent } from './widget-github/widget-github.component';
 
 @NgModule({
   imports: [
@@ -47,7 +48,8 @@ import { WidgetWorkComponent } from './widget-work/widget-work.component';
     WidgetContentWorksComponent,
     WidgetCommentComponent,
     WidgetTitleSecondComponent,
-    WidgetWorkComponent
+    WidgetWorkComponent,
+    WidgetGithubComponent
   ],
   declarations: [
     SidebarKasiusComponent,
@@ -64,7 +66,8 @@ import { WidgetWorkComponent } from './widget-work/widget-work.component';
     WidgetContentWorksComponent,
     WidgetCommentComponent,
     WidgetTitleSecondComponent,
-    WidgetWorkComponent],
+    WidgetWorkComponent,
+    WidgetGithubComponent],
   providers: [ArticleService]
 })
 export class SharedModule { }
