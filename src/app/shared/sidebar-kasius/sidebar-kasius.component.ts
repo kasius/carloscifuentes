@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarKasiusComponent implements OnInit {
 
+  // variables
+  public menu: Boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  // toggle menú
+  public toggleMenu(): void {
+    this.menu = !this.menu;
   }
 
 }

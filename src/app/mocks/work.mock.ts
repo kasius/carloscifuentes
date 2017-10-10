@@ -59,7 +59,7 @@ export const WorkMocks: Work[] = [
     igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes
     de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye
     versiones de Lorem Ipsum.`,
-    url: '../../../assets/img/coya.png',
+    url: '../../../assets/img/geyser.jpg',
     urlBig: 'http://www.sonria.com/wp-content/uploads/2017/02/software.jpg',
     title: 'Coya',
     subtitle: 'Sistema web encargado de gestionar exámenes de laboratorios',

@@ -3,3 +3,16 @@
   <app-widget-shared></app-widget-shared>
   <app-widget-pages></app-widget-pages>
 </section>
+<section class="sidebar-movil">
+  <img src="../../assets/img/my.png" class="img-kasius-movil" alt="Carlos Cifuentes">
+  <span class="text-title-primary">Carlos Cifuentes</span>
+  <img class="img-menu" (click)="toggleMenu()" src="../../../assets/img/menu.png" width="50" title="Carlos Cifuentes" alt="Carlos Cifuentes">
+  <div *ngIf="menu" class="animated fadeIn">
+    <ul class="menu">
+      <li routerLinkActive="active" [routerLink]="['/']">Sobre mí</li>
+      <li routerLinkActive="active" [routerLink]="['/works']">Trabajos</li>
+      <li routerLinkActive="active" [routerLink]="['/blog']">Blog</li>
+      <li routerLinkActive="active" [routerLink]="['/technologies']">Conocimientos</li>
+    </ul>
+  </div>
+</section>

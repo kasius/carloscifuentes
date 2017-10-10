@@ -1,33 +1,28 @@
 @import '../../../assets/sass/palette.sass'
 .work
-  width: calc(31%)
+  width: calc(30%)
   border-radius: 4px
   border: 1px solid #f0f0f0
   float: left
   margin: 4px
   position: relative
+  min-height: 260px
+  overflow: hidden
   .triangle-icon
     position: absolute
     z-index: 99
     right: 0
-    border-top: 120px solid $primary-color-dark
-    border-left: 120px solid transparent
+    border-top: 100px solid $primary-color-dark
+    border-left: 100px solid transparent
   .icon-angular
     position: absolute
     right: 0
     top: 0
     z-index: 100
     width: 25%
-  .item
-    position: relative
-    overflow: hidden
-    margin: 0
-    height: 260px
-    background-color: black
-    line-height: 260px
   .img-work
     width: 100%
-    max-width: 100%
+    height: auto
     -moz-transition: all 0.3s
     -webkit-transition: all 0.3s
     transition: all .5s ease

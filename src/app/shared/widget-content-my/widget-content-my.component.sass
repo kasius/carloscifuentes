@@ -2,14 +2,7 @@
 \:host  
   width: 100% 
   padding: 90px 180px 100px 90px 
-  height: -webkit-calc(100vh - 200px)
-  height:    -moz-calc(100vh - 200px)
-  height:         calc(100vh - 200px)
-  max-height: -webkit-calc(100vh - 200px)
-  max-height:    -moz-calc(100vh - 200px)
-  max-height:         calc(100vh - 200px)
 .widget-content
-  float: left
   width: 100%
   img 
     float: left
@@ -19,3 +12,9 @@
     margin-left: 10px
     span 
       line-height: 80px
+@media only screen and (max-width: 800px)
+  \:host  
+    padding: 0 100px
+    .widget-content
+      width: 100%
+      text-align: center
